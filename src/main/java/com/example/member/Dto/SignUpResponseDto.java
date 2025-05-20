@@ -6,11 +6,11 @@ import lombok.Getter;
 public class SignUpResponseDto {
 
     // 1. 속성
-    private final Long id;
+    private final Long id;  // 아이디
 
-    private final String username;
+    private final String username; // 작성자
 
-    private final Integer age;
+    private final Integer age; // 나이
 
     // 2. 생성자
     public SignUpResponseDto(Long id, String username, Integer age) {

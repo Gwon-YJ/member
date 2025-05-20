@@ -8,17 +8,17 @@ import lombok.Getter;
 @Table(name = "member")
 public class Member extends BaseEntity {
     // 1. 속성
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // 고유 ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //겹치지 않게 만들어주는 것
     private Long id;
 
     @Column(nullable = false, unique = true)
-    private String username;
+    private String username; // 유저이름
 
     @Column(nullable = false)
-    private String password;
+    private String password; // 비밀번호
 
-    private Integer age;
+    private Integer age; // 나이
 
     // 2. 생성자
     public Member() {

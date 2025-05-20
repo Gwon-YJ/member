@@ -18,8 +18,8 @@ public abstract class BaseEntity {
     @CreatedDate
     @Column(updatable = false)
 //    @Temporal(TemporalType.TIMESTAMP) 생략가능
-    private LocalDateTime created_At;
+    private LocalDateTime created_At; // 작성일
 
     @LastModifiedDate
-    private LocalDateTime updated_At;
+    private LocalDateTime updated_At; // 수정일
 }

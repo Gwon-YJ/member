@@ -8,11 +8,11 @@ import java.util.StringTokenizer;
 public class CreataScheduleRequestDto {
 
     // 1. 속성
-    private final String title;
+    private final String title; // 제목
 
-    private final String contents;
+    private final String contents; // 할일 내용
 
-    private final String username;
+    private final String username; // 유저이름
 
     // 2. 생성자
     public CreataScheduleRequestDto(String title, String contents, String username) {

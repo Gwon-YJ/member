@@ -6,11 +6,11 @@ import lombok.Getter;
 @Getter
 public class ScheduleResponseDto {
     // 1. 속성
-    private final Long id;
+    private final Long id; // 아이디
 
-    private final String title;
+    private final String title; // 제목
 
-    private final String contents;
+    private final String contents; // 할일내용
 
     // 2. 생성자
     public ScheduleResponseDto(Long id, String title, String contents) {
