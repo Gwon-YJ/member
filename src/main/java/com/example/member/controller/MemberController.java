@@ -8,4 +8,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/members")
 @RequiredArgsConstructor
 public class MemberController {
+
 }
