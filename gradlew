@@ -248,5 +248,4 @@ eval "set -- $(
         tr '\n' ' '
     )" '"$@"'
 
-
 exec "$JAVACMD" "$@"
