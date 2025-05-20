@@ -15,11 +15,13 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class MemberService {
-
+    // 1. 속성
     private final MemberRepository memberRepository;
 
+    // 2. 생성자
 
-    // 회원 생성 기능
+    // 3. 기능
+    // 회원 생성
     public SignUpResponseDto signUp(String username, String password, Integer age) {
 
         Member member = new Member(username, password, age);
@@ -29,7 +31,7 @@ public class MemberService {
         return new SignUpResponseDto(savedMember.getId(), savedMember.getUsername(), savedMember.getAge());
     }
 
-    // 특정 회원 조회 기능
+    // 특정 회원 조회
     public MemberResponseDto findById(Long id) {
 
         Optional<Member> optionalMember = memberRepository.findById(id);
@@ -44,7 +46,7 @@ public class MemberService {
         return new MemberResponseDto(findMember.getUsername(), findMember.getAge());
     }
 
-    // 비밀번호 수정 기능
+    // 비밀번호 수정
     @Transactional
     public void updatePassword(Long id, String oldPassword, String newPassword) {
 
@@ -56,5 +58,4 @@ public class MemberService {
 
         findMember.updatePassword(newPassword);
     }
-
 }

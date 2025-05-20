@@ -17,10 +17,14 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ScheduleService {
 
+    // 1. 속성
     private final MemberRepository memberRepository;
     private final ScheduleRepository scheduleRepository;
 
-    // 일정 생성 기능
+    // 2. 생성자
+
+    // 3. 기능
+    // 일정 생성
     public ScheduleResponseDto save(String title, String contents, String username) {
 
         Member findMember = memberRepository.findMemberByUsernameOrElseThrow(username);
@@ -33,7 +37,7 @@ public class ScheduleService {
         return new ScheduleResponseDto(schedule.getId(), schedule.getTitle(), schedule.getContents());
     }
 
-    // 일정 전체 조회 기능
+    // 일정 전체 조회
     public List<ScheduleResponseDto> findAll() {
         return scheduleRepository.findAll()
                 .stream()
@@ -41,7 +45,7 @@ public class ScheduleService {
                 .toList();
     }
 
-    // 일정 조회 기능
+    // 일정 단건 조회
     public ScheduleWithAgeResponseDto findById(Long id) {
         Schedule findSchedule = scheduleRepository.findByIdOrElseThrow(id);
         Member writer = findSchedule.getMember();
@@ -49,13 +53,11 @@ public class ScheduleService {
         return new ScheduleWithAgeResponseDto(findSchedule.getTitle(), findSchedule.getContents(), writer.getAge());
     }
 
-    // 일정 삭제 기능
+    // 일정 삭제
     public void delete(Long id) {
 
         Schedule findSchedule = scheduleRepository.findByIdOrElseThrow(id);
 
         scheduleRepository.delete(findSchedule);
     }
-
-
 }

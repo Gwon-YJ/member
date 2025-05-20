@@ -14,9 +14,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/members")
 @RequiredArgsConstructor
 public class MemberController {
-
+    // 1. 속성
     private final MemberService memberService;
 
+    // 2. 생성자
+
+    // 3. 기능
     // 회원 생성 기능
     @PostMapping("/signup")
     public ResponseEntity<SignUpResponseDto> signUp(@RequestBody SignUpRequestDto requestDto) {

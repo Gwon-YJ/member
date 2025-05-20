@@ -22,4 +22,8 @@ public abstract class BaseEntity {
 
     @LastModifiedDate
     private LocalDateTime updated_At; // 수정일
+
+    // 2. 생성자
+
+    // 3. 기능
 }

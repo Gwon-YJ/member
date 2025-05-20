@@ -8,8 +8,14 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.Optional;
 
-// 비밀번호 수정 기능
+
 public interface MemberRepository extends JpaRepository<Member, Long> {
+    // 1. 속성
+
+    // 2. 생성자
+
+    // 3. 기능
+    // 비밀번호 수정 기능
     default Member findByIdOrElseThrow(Long id) {
         return findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Does not exist id = " + id));
     }

@@ -15,9 +15,12 @@ import java.util.List;
 @RequestMapping("/schedules")
 @AllArgsConstructor
 public class ScheduleController {
-
+    // 1. 속성
     private ScheduleService scheduleService;
 
+    // 2. 생성자
+
+    // 3. 기능
     // 일정 생성
     @PostMapping
     public ResponseEntity<ScheduleResponseDto> save(@RequestBody CreataScheduleRequestDto requestDto) {
