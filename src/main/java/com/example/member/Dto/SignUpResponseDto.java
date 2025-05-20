@@ -6,9 +6,9 @@ import lombok.Getter;
 public class SignUpResponseDto {
 
     // 1. 속성
-    private final Long id;  // 아이디
+    private final Long id;  // ID
 
-    private final String username; // 작성자
+    private final String username; // 작성 유저명
 
     private final Integer age; // 나이
 

@@ -13,7 +13,7 @@ public class Member extends BaseEntity {
     private Long id;
 
     @Column(nullable = false, unique = true)
-    private String username; // 유저이름
+    private String username; // 작성 유저명
 
     @Column(nullable = false)
     private String password; // 비밀번호

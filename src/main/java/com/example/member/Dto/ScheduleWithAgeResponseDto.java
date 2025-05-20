@@ -5,7 +5,7 @@ import lombok.Getter;
 @Getter
 public class ScheduleWithAgeResponseDto {
     // 1. 속성
-    private final String title; // 제목
+    private final String title; // 할일 제목
 
     private final String contents; // 할일 내용
 

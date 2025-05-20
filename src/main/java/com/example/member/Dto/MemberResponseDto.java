@@ -6,7 +6,7 @@ import lombok.Getter;
 public class MemberResponseDto {
 
     // 1. 속성
-    private final String username; // 유저이름
+    private final String username; // 작성 유저명
 
     private final Integer age; // 나이
 
