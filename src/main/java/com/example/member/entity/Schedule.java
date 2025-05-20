@@ -26,13 +26,13 @@ public class Schedule extends BaseEntity {
     public Schedule() {
     }
 
-    private Schedule(String title, String contents) {
+    public Schedule(String title, String contents) {
       this.title = title;
       this.contents = contents;
     }
 
     // 3. 기능
-    private void setMember(Member member) {
+    public void setMember(Member member) {
         this.member = member;
     }
 }

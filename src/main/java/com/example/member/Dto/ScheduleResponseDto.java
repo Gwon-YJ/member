@@ -1,9 +1,6 @@
 package com.example.member.Dto;
 
 import com.example.member.entity.Schedule;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.Getter;
 
 @Getter
@@ -24,7 +21,7 @@ public class ScheduleResponseDto {
 
     // 3. 기능
     public static ScheduleResponseDto toDto(Schedule schedule) {
-        return new ScheduleResponseDto(Schedule.getId(), schedule.getTitle(), schedule.getContents());
+        return new ScheduleResponseDto(schedule.getId(), schedule.getTitle(), schedule.getContents());
     }
 
 
