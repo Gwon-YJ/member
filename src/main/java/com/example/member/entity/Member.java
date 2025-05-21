@@ -20,14 +20,17 @@ public class Member extends BaseEntity {
 
     private Integer age; // 나이
 
+    private String email; // 이메일
+
     // 2. 생성자
     public Member() {
     }
 
-    public Member(String username, String password, Integer age) {
+    public Member(String username, String password, Integer age, String email) {
         this.username = username;
         this.password = password;
         this.age = age;
+        this.email = email;
     }
 
     // 3. 기능

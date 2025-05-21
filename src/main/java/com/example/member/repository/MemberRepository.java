@@ -1,7 +1,6 @@
 package com.example.member.repository;
 
 import com.example.member.entity.Member;
-import com.example.member.entity.Schedule;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;

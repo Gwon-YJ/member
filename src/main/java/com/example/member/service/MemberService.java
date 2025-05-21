@@ -22,13 +22,13 @@ public class MemberService {
 
     // 3. 기능
     // 회원 생성
-    public SignUpResponseDto signUp(String username, String password, Integer age) {
+    public SignUpResponseDto signUp(String username, String password, Integer age, String email) {
 
-        Member member = new Member(username, password, age);
+        Member member = new Member(username, password, age, email);
 
         Member savedMember = memberRepository.save(member);
 
-        return new SignUpResponseDto(savedMember.getId(), savedMember.getUsername(), savedMember.getAge());
+        return new SignUpResponseDto(savedMember.getId(), savedMember.getUsername(), savedMember.getAge(), savedMember.getEmail());
     }
 
     // 특정 회원 조회

@@ -28,7 +28,8 @@ public class MemberController {
                 memberService.signUp(
                         requestDto.getUsername(),
                         requestDto.getPassword(),
-                        requestDto.getAge()
+                        requestDto.getAge(),
+                        requestDto.getEmail()
                 );
 
         return new ResponseEntity<>(signUpResponseDto, HttpStatus.CREATED);
