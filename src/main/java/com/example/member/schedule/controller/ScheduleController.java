@@ -1,9 +1,9 @@
-package com.example.member.controller;
+package com.example.member.schedule.controller;
 
-import com.example.member.Dto.CreataScheduleRequestDto;
-import com.example.member.Dto.ScheduleResponseDto;
-import com.example.member.Dto.ScheduleWithAgeResponseDto;
-import com.example.member.service.ScheduleService;
+import com.example.member.schedule.Dto.CreataScheduleRequestDto;
+import com.example.member.schedule.Dto.ScheduleResponseDto;
+import com.example.member.schedule.Dto.UpdateScheduleDto;
+import com.example.member.schedule.service.ScheduleService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,14 +22,12 @@ public class ScheduleController {
 
     // 3. 기능
     // 일정 생성
-    @PostMapping
-    public ResponseEntity<ScheduleResponseDto> save(@RequestBody CreataScheduleRequestDto requestDto) {
-
+    @PostMapping("/{memberId}")
+    public ResponseEntity<ScheduleResponseDto> save(@PathVariable("memberId") Long id,
+            @RequestBody CreataScheduleRequestDto requestDto) {
         ScheduleResponseDto scheduleResponseDto =
                 scheduleService.save(
-                        requestDto.getTitle(),
-                        requestDto.getContents(),
-                        requestDto.getUsername()
+                        id, requestDto
         );
 
         return new ResponseEntity<>(scheduleResponseDto, HttpStatus.CREATED);
@@ -47,12 +45,22 @@ public class ScheduleController {
 
     // 일정 단건 조회 기능
     @GetMapping("/{id}")
-    public ResponseEntity<ScheduleWithAgeResponseDto> findById(@PathVariable Long id) {
+    public ResponseEntity<ScheduleResponseDto> findById(@PathVariable Long id) {
 
-        ScheduleWithAgeResponseDto scheduleWithAgeResponseDto = scheduleService.findById(id);
+        ScheduleResponseDto scheduleResponseDto = scheduleService.findById(id);
 
-        return new ResponseEntity<>(scheduleWithAgeResponseDto, HttpStatus.OK);
+        return new ResponseEntity<>(scheduleResponseDto, HttpStatus.OK);
     }
+
+    // 일정 수정 기능
+    @PutMapping("/{id}")
+    public ResponseEntity<ScheduleResponseDto>update(@PathVariable Long id, @RequestBody UpdateScheduleDto updateScheduleDto) {
+
+        ScheduleResponseDto scheduleResponseDto =  scheduleService.updateSchedule(id,updateScheduleDto.getTitle(),updateScheduleDto.getPassword(),updateScheduleDto.getContents());
+
+    return new ResponseEntity<>(scheduleResponseDto, HttpStatus.OK);
+    }
+
 
 
     // 일정 삭제 기능

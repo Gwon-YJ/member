@@ -1,9 +1,12 @@
-package com.example.member.repository;
+package com.example.member.schedule.repository;
 
-import com.example.member.entity.Schedule;
+import com.example.member.member.entity.Member;
+import com.example.member.schedule.entity.Schedule;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
+
+import java.util.Optional;
 
 public interface ScheduleRepository extends JpaRepository<Schedule, Long> {
     // 1. 속성
@@ -15,7 +18,4 @@ public interface ScheduleRepository extends JpaRepository<Schedule, Long> {
     default Schedule findByIdOrElseThrow(Long id) {
         return findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Does not exist id = " + id));
     }
-
-
-
 }

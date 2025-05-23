@@ -1,5 +1,8 @@
-package com.example.member.entity;
+package com.example.member.schedule.entity;
 
+import com.example.member.common.entity.BaseEntity;
+import com.example.member.member.entity.Member;
+import com.example.member.schedule.Dto.CreataScheduleRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 
@@ -15,6 +18,9 @@ public class Schedule extends BaseEntity {
     @Column(nullable = false)
     private String title; // 할일 제목
 
+    @Column(nullable = false)
+    private String password; // 비밀번호
+
     @Column(columnDefinition = "longtext")
     private String contents; // 할일 내용
 
@@ -26,13 +32,23 @@ public class Schedule extends BaseEntity {
     public Schedule() {
     }
 
-    public Schedule(String title, String contents) {
-      this.title = title;
-      this.contents = contents;
+    public Schedule(CreataScheduleRequestDto requestDto) {
+      this.title = requestDto.getTitle();
+      this.contents = requestDto.getContents();
+      this.password = requestDto.getPassword();
     }
 
     // 3. 기능
     public void setMember(Member member) {
         this.member = member;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setContents(String contents) {
+        this.contents = contents;
+    }
+
 }

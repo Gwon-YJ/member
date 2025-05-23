@@ -1,19 +1,19 @@
-package com.example.member.Dto;
+package com.example.member.member.Dto;
 
 import lombok.Getter;
 
 @Getter
 public class MemberResponseDto {
-
     // 1. 속성
     private final String username; // 작성 유저명
-    private final Integer age; // 나이
+    private final String email; // 이메일
 
     // 2. 생성자
-    public MemberResponseDto(String username, Integer age) {
+    public MemberResponseDto(String username, String email) {
         this.username = username;
-        this.age = age;
+        this.email = email;
     }
 
     // 3. 기능
 }
+
