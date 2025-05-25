@@ -613,7 +613,7 @@ body(json)
 ```
 
 
-## 로그아웃
+## 로그아웃(Logout)
 개요
 URL: /logout
 HTTP METHOD: DELETE
