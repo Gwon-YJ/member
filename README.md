@@ -55,8 +55,8 @@ body(json)
 예시
 ``` json
 {
-"username": "yongjun",
-"password": "1234",
+"username" : "yongjun",
+"password" : "1234",
 "email" : "yoyo99828@naver.com"
 }
 ```
@@ -77,9 +77,9 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
-"id": 1
+"status" : 200
+"data" : {
+"id" : 1
   }
 }
 ```
@@ -96,8 +96,8 @@ body(json)
 예시
 ``` json
 {
-"status": 401
-"message": "의문의 에러가 발생했습니다."
+"status" : 401
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -138,8 +138,8 @@ body(json)
 예시
 ``` json
 {
-"username": "yongjun",
-"password": "1234",
+"username" : "yongjun",
+"password" : "1234",
 "email" : "yoyo99828@naver.com"
 }
 ```
@@ -163,11 +163,11 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
-"id": 1,
-"username": "yongjun",
-"password": "1234",
+"status" : 200
+"data" : {
+"id" : 1,
+"username" : "yongjun",
+"password" : "1234",
 "email" : "yoyo99828@naver.com"
   }
 }
@@ -185,8 +185,8 @@ body(json)
 예시
 ``` json
 {
-"status": 401
-"message": "의문의 에러가 발생했습니다."
+"status" : 401
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -196,7 +196,7 @@ body(json)
 URL: /members
 
 HTTP METHOD: POST
-
+ 
 설명예시: 회원을 생성하는 API입니다.
 
 ### 요청(Request)
@@ -226,8 +226,8 @@ body(json)
 예시
 ``` json
 {
-"username": "yongjun",
-"password": "1234",
+"username" : "yongjun",
+"password" : "1234",
 "email" : "yoyo99828@naver.com"
 }
 ```
@@ -251,11 +251,11 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
-"id": 1
-"username": "yongjun",
-"password": "1234",
+"status" : 200
+"data" : {
+"id" : 1
+"username" : "yongjun",
+"password" : "1234",
 "email" : "yoyo99828@naver.com"
   }
 }
@@ -273,8 +273,8 @@ body(json)
 예시
 ``` json
 {
-"status": 401
-"message": "의문의 에러가 발생했습니다."
+"status" : 401
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -312,8 +312,8 @@ body(json)
 예시
 ``` json
 {
-"username": "yongjun",
-"password": "1234",
+"username" : "yongjun",
+"password" : "1234",
 "email" : "yoyo99828@naver.com"
 }
 ```
@@ -333,19 +333,19 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
+"status" : 200
+"data" : {
 [
  {
   "id" : 1,
-  "username": "yongjun",
-  "password": "1234",
+  "username" : "yongjun",
+  "password" : "1234",
   "email" : "yoyo99828@naver.com"
  }
  {
   "id" : 2,
-  "username": "john",
-  "password": "1234",
+  "username" : "john",
+  "password" : "1234",
   "email" : "yoyo99@naver.com"
  } 
 ]
@@ -365,8 +365,8 @@ body(json)
 예시
 ``` json
 {
-"status": 400
-"message": "의문의 에러가 발생했습니다."
+"status" : 400
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -404,8 +404,8 @@ body(json)
 예시
 ``` json
 {
-  "username": "yongjun",
-  "password": "1234",
+  "username" : "yongjun",
+  "password" : "1234",
   "email" : "yoyo99828@naver.com"
 }
 ```
@@ -428,11 +428,11 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
+"status" : 200
+"data" : {
    "id" : 1
-   "username": "yongjun",
-   "password": "1234",
+   "username" : "yongjun",
+   "password" : "1234",
    "email" : "yoyo99828@naver.com"
   }
 }
@@ -450,8 +450,8 @@ body(json)
 예시
 ``` json
 {
-"status": 400
-"message": "의문의 에러가 발생했습니다."
+"status" : 400
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -490,8 +490,8 @@ body(json)
 예시
 ``` json
 {
-  "username": "john",
-  "password": "1234",
+  "username" : "john",
+  "password" : "1234",
   "email" : "yoyo9092@naver.com"
 }
 ```
@@ -511,9 +511,9 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
-"id": 1
+"status" : 200
+"data" : {
+"id" : 1
   }
 }
 ```
@@ -530,8 +530,8 @@ body(json)
 예시
 ``` json
 {
-"status": 401
-"message": "의문의 에러가 발생했습니다."
+"status" : 401
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -589,8 +589,8 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
+"status" : 200
+"data" : {
   }
 }
 ```
@@ -607,8 +607,8 @@ body(json)
 예시
 ``` json
 {
-"status": 400
-"message": "의문의 에러가 발생했습니다."
+"status" : 400
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -631,7 +631,7 @@ Param
 
 예시
 ``` json
-password "1234"
+"password" : "1234"
 ```
 
 body(json)
@@ -684,8 +684,8 @@ body(json)
 예시
 ``` json
 {
-"status": 400
-"message": "의문의 에러가 발생했습니다."
+"status" : 400
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -750,9 +750,9 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
-    "id": 1,
+"status" : 200
+"data" : {
+    "id" : 1,
     "title" : "오늘이다",
     "contents" : "공부",
     "password" : "1234"
@@ -773,8 +773,8 @@ body(json)
 예시
 ``` json
 {
-"status": 401
-"message": "의문의 에러가 발생했습니다."
+"status" : 401
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -812,7 +812,7 @@ body(json)
 예시
 ``` json
 {
-  "title: "코딩공부하기",
+  "title" : "코딩공부하기",
   "contents": "하나씩 알아가는 중",
   "password": "1234"
 }
@@ -837,20 +837,20 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
+"status" : 200
+"data" : {
  ]
   {
-   "id": 1,
-   "title: "코딩공부하기",
-   "contents": "하나씩 알아가는 중",
-   "password": "1234",
+   "id" : 1,
+   "title" : "코딩공부하기",
+   "contents" : "하나씩 알아가는 중",
+   "password" : "1234",
    "updated_at" : "2025-05-24 00:53:51"
    }
    "id": 2,
-   "title: "TIL 작성하기",
-   "contents": "오늘 배운 내용 정리",
-   "password": "1234",
+   "title" : "TIL 작성하기",
+   "contents" : "오늘 배운 내용 정리",
+   "password" : "1234",
    "updated_at" : "2025-05-24 00:53:51"
    }
  ]
@@ -870,8 +870,8 @@ body(json)
 예시
 ``` json
 {
-"status": 400
-"message": "의문의 에러가 발생했습니다."
+"status" : 400
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -910,9 +910,9 @@ body(json)
 ``` json
 {
 "id" : 1
-   "title: "코딩공부하기",
-   "contents": "하나씩 알아가는 중",
-   "password": "1234"
+   "title" : "코딩공부하기",
+   "contents" : "하나씩 알아가는 중",
+   "password" : "1234"
 }
 ```
 
@@ -938,9 +938,9 @@ body(json)
 "status": 200
 "data": {
    "id": 1,
-   "title: "코딩공부하기",
-   "contents": "하나씩 알아가는 중",
-   "password": "1234",
+   "title" : "코딩공부하기",
+   "contents" : "하나씩 알아가는 중",
+   "password" : "1234",
    "updated_at" : "2025-05-24 00:53:51"
   }
 }
@@ -958,8 +958,8 @@ body(json)
 예시
 ``` json
 {
-"status": 400
-"message": "의문의 에러가 발생했습니다."
+"status" : 400
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -998,9 +998,9 @@ body(json)
 예시
 ``` json
 {
-  "username": "john",
-  "password": "1234",
-  "email" : "yoyo9092@naver.com"
+   "title" : "게임하기",
+   "contents" : "마음을 편하게 하기",
+   "password" : "1234",
 }
 ```
 
@@ -1023,12 +1023,12 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
-   "id": 1,
-   "title: "게임하기",
-   "contents": "마음을 편하게 하기",
-   "password": "1234",
+"status" : 200
+"data" : {
+   "id" : 1,
+   "title" : "게임하기",
+   "contents" : "마음을 편하게 하기",
+   "password" : "1234",
    "updated_at" : "2025-05-24 00:53:51"
   }
 }
@@ -1046,8 +1046,8 @@ body(json)
 예시
 ``` json
 {
-"status": 401
-"message": "의문의 에러가 발생했습니다."
+"status" : 401
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
@@ -1070,7 +1070,7 @@ Param
 
 예시
 ``` jso
-password "1234"
+"password" : "1234"
 ```
 
 body(json)
@@ -1103,8 +1103,8 @@ body(json)
 예시
 ``` json
 {
-"status": 200
-"data": {
+"status" : 200
+"data" : {
   }
 }
 ```
@@ -1121,8 +1121,8 @@ body(json)
 예시
 ``` json
 {
-"status": 400
-"message": "의문의 에러가 발생했습니다."
+"status" : 400
+"message" : "의문의 에러가 발생했습니다."
 }
 ```
 
