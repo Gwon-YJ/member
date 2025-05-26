@@ -1000,7 +1000,7 @@ body(json)
 {
    "title" : "게임하기",
    "contents" : "마음을 편하게 하기",
-   "password" : "1234",
+   "password" : "1234"
 }
 ```
 
@@ -1084,7 +1084,9 @@ body(json)
 예시
 ``` json
 {
-
+   "title" : "게임하기",
+   "contents" : "마음을 편하게 하기",
+   "password" : "1234"
 }
 ```
 
