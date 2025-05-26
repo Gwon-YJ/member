@@ -1128,6 +1128,5 @@ body(json)
 }
 ```
 
-
 # ERD 작성
 ![img.png](img.png)
